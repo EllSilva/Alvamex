@@ -1,0 +1,52 @@
+<div>
+    
+    <!-- Topbar Start -->
+    <div class="container-fluidp-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-3">
+                    <a class="text-body px-2" href="tel:+244928623331"><i class="fa fa-phone-alt text-primary me-2"></i>+244 928 623 331</a>
+                    <a class="text-body px-2" href="mailto:comercial@alvamexx.com"><i class="fa fa-envelope-open text-primary me-2"></i>comercial@alvamexx.com</a>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-2">
+                    <a class="text-body px-2" href="">Termos</a>
+                    <a class="text-body px-2" href="">Privacidade</a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <header class="grid " :class="{ show_menu:activo  }">
+        <!-- Top Navigation -->
+        <nav class="s-12 grid background-none background-primary-hightlight">
+            <!-- logo -->
+            <a href="#/" class="m-12 l-3 padding-2x  logo" style="padding-left: 10%; padding: 10px;">
+                <img src="assets/img/logotipo.png">
+            </a>
+
+            <p class="nav-text"> <a @click="mostrarMenu()"><span></span> </a></p>
+
+            <div class="top-nav s-12 l-9">
+                <ul class="top-ul right chevron">
+                    <li :class="{ active_item:activo1 }"><a @click="homeMenu()" href="#/">Home</a></li>
+                    <li :class="{ active_item:activo2 }"><a @click="sobreMenu()" href="#/sobre">Sobre nós</a></li>
+                    <li :class="{ active_item:activo3 }"><a @click="servicoMenu()" href="#/servicos">Serviços</a></li>
+                    <li :class="{ active_item:activo4 }"><a @click="galeriaMenu()" href="#/galeria">Galeria</a></li>
+                    <li :class="{ active_item:activo5 }"><a @click="contactoMenu()" href="#/contato">Contactos</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+ 
+
+</div>

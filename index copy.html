@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nossos Parceiros - Slider</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    .parceiros-section {
+      padding: 60px 20px;
+      background: linear-gradient(to right, #ffffff, #f1f5f9);
+      text-align: center;
+    }
+
+    .parceiros-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+
+    .parceiros-section p {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .slider-container {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 200px;
+      margin: 0 15px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 120px;
+      filter: grayscale(100%);
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+
+    .slide:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    .slide img {
+      max-height: 80px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .nav-buttons {
+      margin-top: 20px;
+    }
+
+    .nav-buttons button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      margin: 0 5px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .slide {
+        min-width: 150px;
+      }
+
+      .parceiros-section h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="parceiros-section">
+    <h2>Nossos Parceiros</h2>
+    <p>Orgulhosamente conectados com marcas de confiança.</p>
+
+    <div class="slider-container">
+      <div class="slider-track" id="sliderTrack">
+        <div class="slide"><img src="https://via.placeholder.com/150x80?text=Logo+1" alt="Logo 1"></div>
+        <div class="slide"><img src="https://via.placeholder.com/150x80?text=Logo+2" alt="Logo 2"></div>
+        <div class="slide"><img src="https://via.placeholder.com/150x80?text=Logo+3" alt="Logo 3"></div>
+        <div class="slide"><img src="https://via.placeholder.com/150x80?text=Logo+4" alt="Logo 4"></div>
+        <div class="slide"><img src="https://via.placeholder.com/150x80?text=Logo+5" alt="Logo 5"></div>
+      </div>
+    </div>
+
+    <div class="nav-buttons">
+      <button onclick="moveSlider(-1)">◀</button>
+      <button onclick="moveSlider(1)">▶</button>
+    </div>
+  </section>
+
+  <script>
+    const track = document.getElementById('sliderTrack');
+    const slideWidth = 230; // width + margin
+    let position = 0;
+
+    function moveSlider(direction) {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      position += direction * slideWidth;
+
+      if (position < 0) position = 0;
+      if (position > maxScroll) position = maxScroll;
+
+      track.style.transform = `translateX(-${position}px)`;
+    }
+
+    // Auto-slide (opcional)
+    setInterval(() => moveSlider(1), 4000);
+  </script>
+
+</body>
+</html>

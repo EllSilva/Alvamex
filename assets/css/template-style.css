@@ -1,0 +1,316 @@
+
+.jms {
+  position: absolute; 
+  top: 20%;
+  left: 5%;
+}
+
+.slider-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+
+/* Social icons */
+
+.text-size-10,
+.text-xxl-size-10 {
+  font-size: 10px !important;
+  line-height: 1;
+}
+
+.text-size-12,
+.text-xxl-size-12 {
+  font-size: 12px !important;
+  line-height: 1.4;
+}
+
+.text-size-16,
+.text-xxl-size-16 {
+  font-size: 16px !important;
+  line-height: 1.4;
+}
+
+.text-size-20,
+.text-xxl-size-20,
+.text-size-25,
+.text-xxl-size-25,
+.text-size-30,
+.text-xxl-size-30,
+.text-size-40,
+.text-xxl-size-40,
+.text-size-50,
+.text-xxl-size-50,
+.text-size-60,
+.text-xxl-size-60,
+.text-size-70,
+.text-xxl-size-70,
+.text-size-80,
+.text-xxl-size-80,
+.text-size-90,
+.text-xxl-size-90,
+.text-size-100,
+.text-xxl-size-100 {
+  line-height: 1.4;
+}
+
+.text-size-20,
+.text-xxl-size-20 {
+  font-size: 20px !important;
+}
+
+.text-size-25,
+.text-xxl-size-25 {
+  font-size: 25px !important;
+}
+
+.text-size-30,
+.text-xxl-size-30 {
+  font-size: 30px !important;
+}
+
+.text-size-40,
+.text-xxl-size-40 {
+  font-size: 40px !important;
+}
+
+.text-size-50,
+.text-xxl-size-50 {
+  font-size: 50px !important;
+}
+
+.text-size-60,
+.text-xxl-size-60 {
+  font-size: 60px !important;
+}
+
+.text-size-70,
+.text-xxl-size-70 {
+  font-size: 70px !important;
+}
+
+.text-size-80,
+.text-xxl-size-80 {
+  font-size: 80px !important;
+}
+
+.text-size-90,
+.text-xxl-size-90 {
+  font-size: 90px !important;
+}
+
+.text-size-100,
+.text-xxl-size-100 {
+  font-size: 100px !important;
+}
+
+
+
+
+
+
+
+
+
+
+.text-facebook {
+  color: #3b5998 !important;
+}
+
+.text-twitter {
+  color: #55acee !important;
+}
+
+.text-google {
+  color: #dd4b39 !important;
+}
+
+.text-rss {
+  color: #f77f25 !important;
+}
+
+.text-linkedin {
+  color: #007bb5 !important;
+}
+
+.text-instagram {
+  color: #125688 !important;
+}
+
+.text-youtube {
+  color: #bb0000 !important;
+}
+
+.text-vine {
+  color: #00bf8f !important;
+}
+
+.text-pinterest {
+  color: #cb2027 !important;
+}
+
+.text-flickr {
+  color: #ff0084 !important;
+}
+
+.facebook,
+a:link.facebook,
+.twitter,
+a:link.twitter,
+.google,
+a:link.google,
+.rss,
+a:link.rss,
+.linkedin,
+a:link.linkedin,
+.instagram,
+a:link.instagram,
+.youtube,
+a:link.youtube,
+.vine,
+a:link.vine,
+.pinterest,
+a:link.pinterest,
+.flickr,
+a:link.flickr {
+  color: #fff !important;
+}
+
+.facebook,
+a:link.facebook {
+  background: #3b5998 none repeat scroll 0 0;
+}
+
+.twitter,
+a:link.twitter {
+  background: #55acee none repeat scroll 0 0;
+}
+ 
+
+
+.google,
+a:link.google {
+  background: #dd4b39 none repeat scroll 0 0;
+}
+
+.rss,
+a:link.rss {
+  background: #f77f25 none repeat scroll 0 0;
+}
+
+.linkedin,
+a:link.linkedin {
+  background: #007bb5 none repeat scroll 0 0;
+}
+
+.instagram,
+a:link.instagram {
+  background: #125688 none repeat scroll 0 0;
+}
+
+.youtube,
+a:link.youtube {
+  background: #bb0000 none repeat scroll 0 0;
+}
+
+.vine,
+a:link.vine {
+  background: #00bf8f none repeat scroll 0 0;
+}
+
+.pinterest,
+a:link.pinterest {
+  background: #cb2027 none repeat scroll 0 0;
+}
+
+.flickr,
+a:link.flickr {
+  background: #ff0084 none repeat scroll 0 0;
+}
+
+/* Forms */
+form.customform input,
+form.customform textarea,
+form.customform select {
+  background: rgba(0, 0, 0, 0.03) none repeat scroll 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  font-size: 12px;
+  padding: 0.625rem;
+  width: 100%;
+}
+
+form.customform input:hover,
+form.customform textarea:hover,
+form.customform select:hover,
+form.customform input:focus,
+form.customform textarea:focus,
+form.customform select:focus {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+
+/* -1366 version */
+@media screen and (max-width:1366px) {
+  .margin-xl-bottom {
+    margin-bottom: 1.25rem !important;
+    display: block;
+  }
+
+  .margin-xl-left {
+    margin-left: 1.25rem !important;
+  }
+
+  .margin-xl-right {
+    margin-right: 1.25rem !important;
+  }
+
+  .margin-xl-top-bottom {
+    margin-top: 1.25rem !important;
+    margin-bottom: 1.25rem !important;
+    display: block;
+  }
+
+  .margin-xl-left-right {
+    margin-left: 1.25rem !important;
+    margin-right: 1.25rem !important;
+  }
+
+  .margin-xl-top-0,
+  .margin-xl-top-10,
+  .margin-xl-top-15,
+  .margin-xl-top-20,
+  .margin-xl-top-30,
+  .margin-xl-top-40,
+  .margin-xl-top-50,
+  .margin-xl-top-60,
+  .margin-xl-top-70,
+  .margin-xl-top-80,
+  .margin-xl-bottom-0,
+  .margin-xl-bottom-10,
+  .margin-xl-bottom-15,
+  .margin-xl-bottom-20,
+  .margin-xl-bottom-30,
+  .margin-xl-bottom-40,
+  .margin-xl-bottom-50,
+  .margin-xl-bottom-60,
+  .margin-xl-bottom-70,
+  .margin-xl-bottom-80,
+  .margin-xl-top-bottom-0,
+  .margin-xl-top-bottom-10,
+  .margin-xl-top-bottom-15,
+  .margin-xl-top-bottom-20,
+  .margin-xl-top-bottom-30,
+  .margin-xl-top-bottom-40,
+  .margin-xl-top-bottom-50,
+  .margin-xl-top-bottom-60,
+  .margin-xl-top-bottom-70,
+  .margin-xl-top-bottom-80 {
+    display: block;
+  }
+
+  
+}
+
+
+
+
